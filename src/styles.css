@@ -1,9 +1,7 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 body {
-  background-color: #504d52;
-  font-family: "Raleway", serif;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1;
+  background-color: rgba(176, 253, 253, 0.98);
   margin: 0;
   padding: 0;
 }
