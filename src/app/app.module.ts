@@ -1,6 +1,9 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import {RouterModule} from '@angular/router';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
@@ -10,12 +13,14 @@ import {MatButtonModule} from '@angular/material/button';
 
 import {AppComponent} from './app.component';
 import {HomeComponent} from './home/home.component';
+import {NoContentComponent} from './no-content/no-content.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NoContentComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +28,10 @@ import {HomeComponent} from './home/home.component';
     MatToolbarModule,
     MatMenuModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule,
+    HttpClientModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
