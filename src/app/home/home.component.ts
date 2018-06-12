@@ -21,7 +21,7 @@ export class HomeComponent {
     this.error = undefined;
 
     return this.auth.signInWithEmail(this.login, this.password)
-      .then((resp) => localStorage.setItem(SECURITY_TOKEN, `${resp.user.uid}::${Date.now()}`))
+      .then((resp) => localStorage.setItem(SECURITY_TOKEN, `${resp.uid}::${Date.now()}`))
       .then(() => this.router.navigate(['dashboard']))
       .catch((err) => {
         localStorage.clear();

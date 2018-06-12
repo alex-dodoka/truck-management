@@ -5,15 +5,17 @@
             routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
       <mat-icon>home</mat-icon>
     </button>
-    <button mat-icon-button *ngIf="isToken()" [routerLink]=" ['./dashboard'] "
+
+    <button mat-icon-button="dashboard" *ngIf="isToken()" [routerLink]=" ['./dashboard'] "
             routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
       <mat-icon>dashboard</mat-icon>
     </button>
 
 
-    <button *ngIf="isToken()" (click)="logout()">
+    <a mat-button class="header-icon" *ngIf="isToken()" (click)="logout()">
       Logout
-    </button>
+    </a>
+
 
     <span class="header-remaining-space"></span>
 

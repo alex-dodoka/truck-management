@@ -1,10 +1,24 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "styles/css/bootstrap.min.css";
 
-html,body {
+html, body {
   background: #eee;
   margin: 0;
   padding: 0;
   height: 100%;
 }
+
+.margin-top-10 {
+  margin-top: 10%;
+}
+
+.margin-top-5 {
+  margin-top: 5%;
+}
+
+.margin-top-2 {
+  margin-top: 2%;
+}
+
 
 

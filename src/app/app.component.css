@@ -1,8 +1,10 @@
 
-a.active {
+button.active {
   background-color: #d5d5d5;
 }
-
+a{
+  text-decoration: none;
+}
 .footer {
   position: fixed;
   bottom: 0;
