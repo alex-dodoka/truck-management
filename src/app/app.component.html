@@ -1,7 +1,17 @@
 <mat-toolbar>
   <button mat-icon-button>
-    <mat-icon>home</mat-icon>
+    <a [routerLink]=" ['./home'] "
+       routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      <mat-icon>home</mat-icon>
+    </a>
   </button>
+  <a *ngIf="isToken()" [routerLink]=" ['./dashboard'] "
+     routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+    dashboard
+  </a>
+  <a *ngIf="isToken()" (click)="logout()">
+    logout
+  </a>
 
   <span class="header-remaining-space"></span>
 
