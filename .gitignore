@@ -31,5 +31,9 @@ testem.log
 /e2e/*.js
 /e2e/*.map
 
+# custom styles
+src/styles
+
+
 # System Files
 Thumbs.db
