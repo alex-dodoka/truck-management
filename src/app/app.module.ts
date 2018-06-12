@@ -4,9 +4,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {PreloadAllModules, RouterModule} from '@angular/router';
+
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material';
-
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
@@ -22,11 +22,11 @@ import {ROUTES} from './app.routes';
 import {AppComponent} from './app.component';
 import {HomeComponent} from './home/home.component';
 import {NoContentComponent} from './no-content/no-content.component';
-import {DashboardComponent} from './dashboard/dashboard.component';
 
 import {ENV_FIREBASE_CONFIG} from '../environments/environment.prod';
-import {AppAuthService} from './service/app.auth.service';
 import {AppFirestoreService} from './service/app.firestore.service';
+import {DashboardComponent} from './dashboard/dashboard.component';
+import {AppAuthService} from './service/app.auth.service';
 import {AuthGuard} from './util/auth-guard';
 
 
@@ -57,8 +57,8 @@ import {AuthGuard} from './util/auth-guard';
     AngularFireAuthModule,
     AngularFireStorageModule
   ],
-  providers: [AppAuthService,
-    AppFirestoreService,
+  providers: [AppFirestoreService,
+    AppAuthService,
     AuthGuard],
   bootstrap: [AppComponent]
 })

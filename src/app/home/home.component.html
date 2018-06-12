@@ -1,13 +1,13 @@
-
 <form>
   <div>{{error | json}}</div>
   <div class="group">
 
     <mat-form-field>
-      <input matInput placeholder="Enter email" type="email"
-             id="email"
+      <input matInput placeholder="Enter email"
+             type="email"
              [(ngModel)]="login"
-             name="login"><span class="highlight"></span>
+             name="login">
+      <span class="highlight"></span>
     </mat-form-field>
   </div>
 
@@ -15,15 +15,18 @@
 
     <mat-form-field>
       <input matInput placeholder="Password" type="password"
-             id="password"
              [(ngModel)]="password"
-             name="password"><span class="highlight"></span>
+             name="password">
+      <span class="highlight"></span>
     </mat-form-field>
 
   </div>
 
   <button type="submit" class="button buttonBlue"
           (click)="onSubmit()">Submit
-    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+    <div class="ripples buttonRipples">
+      <span class="ripplesCircle"></span>
+    </div>
   </button>
+
 </form>

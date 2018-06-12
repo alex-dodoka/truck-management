@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
-import {Router} from '@angular/router';
 import {AppAuthService} from '../service/app.auth.service';
 import {SECURITY_TOKEN} from '../util/security-constants';
+import {Router} from '@angular/router';
 
 
 @Component({

@@ -30,16 +30,16 @@ input:focus {
 
 /* Label */
 
-label {
-  color: #999;
-  font-size: 18px;
-  font-weight: normal;
-  position: absolute;
-  pointer-events: none;
-  left: 5px;
-  top: 10px;
-  transition: all 0.2s ease;
-}
+/*label {*/
+  /*color: #999;*/
+  /*font-size: 18px;*/
+  /*font-weight: normal;*/
+  /*position: absolute;*/
+  /*pointer-events: none;*/
+  /*left: 5px;*/
+  /*top: 10px;*/
+  /*transition: all 0.2s ease;*/
+/*}*/
 
 /* active */
 
