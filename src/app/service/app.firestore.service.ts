@@ -6,6 +6,7 @@ import {AngularFirestore} from 'angularfire2/firestore';
 export class AppFirestoreService {
 
   constructor(private http: HttpClient, private db: AngularFirestore) {
+    console.log()
   }
 
   public getList(table) {

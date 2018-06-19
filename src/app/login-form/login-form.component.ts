@@ -1,15 +1,15 @@
-import {Component} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {AppAuthService} from '../service/app.auth.service';
 import {SECURITY_TOKEN} from '../util/security-constants';
 import {Router} from '@angular/router';
 
-
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-login-form',
+  templateUrl: './login-form.component.html',
+  styleUrls: ['./login-form.component.css']
 })
-export class HomeComponent {
+export class LoginFormComponent implements OnInit {
+
   protected login: string;
   protected password: string;
   protected error: any;
@@ -27,6 +27,9 @@ export class HomeComponent {
         localStorage.clear();
         return this.error = err;
       });
+  }
+
+  ngOnInit() {
   }
 
 }

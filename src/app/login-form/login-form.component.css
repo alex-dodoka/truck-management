@@ -17,13 +17,13 @@ form {
 }
 
 input {
-font-size: 18px;
-padding: 10px 10px 10px 5px;
-display: block;
-background: #fafafa;
-color: #636363;
-width: 100%;
-border: none;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  background: #fafafa;
+  color: #636363;
+  width: 100%;
+  border: none;
 }
 
 input:focus {

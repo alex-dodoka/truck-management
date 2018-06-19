@@ -17,6 +17,6 @@ export class AppComponent {
 
   protected logout() {
     localStorage.clear();
-    this.router.navigate(['home']);
+    this.router.navigate(['login']);
   }
 }
