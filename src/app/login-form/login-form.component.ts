@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {AppAuthService} from '../service/app.auth.service';
 import {SECURITY_TOKEN} from '../util/security-constants';
 import {Router} from '@angular/router';

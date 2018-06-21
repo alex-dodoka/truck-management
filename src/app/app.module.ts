@@ -28,6 +28,8 @@ import {NoContentComponent} from './no-content/no-content.component';
 import {AppAuthService} from './service/app.auth.service';
 import {AppFirestoreService} from './service/app.firestore.service';
 import {AuthGuard} from './util/auth-guard';
+import {RegistrationFormComponent} from './registration-form/registration-form.component';
+import {HeaderComponent} from './header/header.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import {AuthGuard} from './util/auth-guard';
     AppComponent,
     NoContentComponent,
     DashboardComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    RegistrationFormComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
