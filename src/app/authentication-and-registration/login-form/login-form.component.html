@@ -1,0 +1,29 @@
+<form>
+  <div class="group">
+    <mat-form-field>
+      <mat-label>Enter email</mat-label>
+      <input matInput placeholder="Email" type="email" [(ngModel)]="login" name="login">
+      <span class="highlight"></span>
+    </mat-form-field>
+  </div>
+
+
+  <div class="group">
+    <mat-form-field>
+      <mat-label>Enter Password</mat-label>
+      <input matInput placeholder="Password" type="password" [(ngModel)]="password" name="password">
+      <span class="highlight"></span>
+      <mat-hint color="[accent]">{{error}}</mat-hint>
+    </mat-form-field>
+  </div>
+
+
+  <button mat-button type="submit" class="button buttonBlue"
+          (click)="onSubmit()">Submit
+  </button>
+
+  <button mat-button class="button buttonBlue" [routerLink]=" ['./registration']">
+    Registration
+  </button>
+
+</form>

@@ -22,14 +22,15 @@ import {ENV_FIREBASE_CONFIG} from '../environments/environment.prod';
 import {AppComponent} from './app.component';
 
 import {ROUTES} from './app.routes';
+import {LoginFormComponent} from './authentication-and-registration/login-form/login-form.component';
+import {RegistrationFormComponent} from './authentication-and-registration/registration-form/registration-form.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
-import {LoginFormComponent} from './login-form/login-form.component';
+import {HeaderComponent} from './header/header.component';
 import {NoContentComponent} from './no-content/no-content.component';
+
 import {AppAuthService} from './service/app.auth.service';
 import {AppFirestoreService} from './service/app.firestore.service';
 import {AuthGuard} from './util/auth-guard';
-import {RegistrationFormComponent} from './registration-form/registration-form.component';
-import {HeaderComponent} from './header/header.component';
 
 
 @NgModule({
@@ -59,7 +60,7 @@ import {HeaderComponent} from './header/header.component';
     AngularFireModule.initializeApp(ENV_FIREBASE_CONFIG),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
   ],
   providers: [AppFirestoreService,
     AppAuthService,

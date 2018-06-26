@@ -1,8 +1,7 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import "styles/css/bootstrap.min.css";
 
-html, body {
-  background: #eee;
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -20,5 +19,6 @@ html, body {
   margin-top: 2%;
 }
 
-
-
+.MY_CLASS_FOR_UNDERSTANDING {
+  border: 2px black solid;
+}

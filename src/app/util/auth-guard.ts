@@ -2,7 +2,6 @@ import {CanActivate, Router} from '@angular/router';
 import {Injectable} from '@angular/core';
 import {SECURITY_TOKEN} from './security-constants';
 
-
 @Injectable()
 export class AuthGuard implements CanActivate {
 

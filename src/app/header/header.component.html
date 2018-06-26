@@ -1,3 +1,18 @@
-<p>
-  header works!
-</p>
+<mat-toolbar *ngIf="isToken()">
+
+  <button mat-icon-button [routerLink]=" ['./login'] "
+          routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+    <mat-icon>home</mat-icon>
+  </button>
+
+  <button mat-icon-button *ngIf="isToken()" [routerLink]=" ['./dashboard'] "
+          routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+    <mat-icon>dashboard</mat-icon>
+  </button>
+
+  <span class="header-remaining-space"></span>
+
+  <a mat-button class="header-icon" *ngIf="isToken()" (click)="logout()">
+    Logout
+  </a>
+</mat-toolbar>

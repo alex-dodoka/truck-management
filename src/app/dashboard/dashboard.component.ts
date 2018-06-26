@@ -1,14 +1,16 @@
 import {Component, OnInit} from '@angular/core';
+import Shipment from '../model/Shipment';
+import Truck from '../model/Truck';
 import {AppFirestoreService} from '../service/app.firestore.service';
 import {FIREBASE_SHIPMENT_TABLE, FIREBASE_TRUCK_TABLE} from '../util/routes';
-import Truck from '../model/Truck';
-import Shipment from '../model/Shipment';
 
 @Component({
   selector: 'app-dashboard',
+  providers: [],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
+
 export class DashboardComponent implements OnInit {
   protected truckList: Truck[];
   protected unassignedShipmentList: Shipment[];
@@ -16,7 +18,7 @@ export class DashboardComponent implements OnInit {
   constructor(private firestoreService: AppFirestoreService) {
   }
 
-   ngOnInit() {
+  ngOnInit() {
     this.getTruckList();
     this.getUnassignedShipments();
   }
@@ -48,6 +50,7 @@ export class DashboardComponent implements OnInit {
     return new Truck(it.email, it.first_name, it.last_name, it.licence_plate, it.phone, shipments);
   }
 
+  // noinspection JSMethodCanBeStatic
   private getShipment(it) {
     console.log(it);
     return new Shipment(it.id, it.is_assign, it.title, it.address);

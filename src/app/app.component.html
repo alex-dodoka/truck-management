@@ -1,29 +1,7 @@
 <nav>
-  <mat-toolbar>
-
-    <button mat-icon-button [routerLink]=" ['./login'] "
-            routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-      <mat-icon>home</mat-icon>
-    </button>
-
-    <button mat-icon-button="dashboard" *ngIf="isToken()" [routerLink]=" ['./dashboard'] "
-            routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-      <mat-icon>dashboard</mat-icon>
-    </button>
-
-
-    <a mat-button class="header-icon" *ngIf="isToken()" (click)="logout()">
-      Logout
-    </a>
-
-    <span class="header-remaining-space"></span>
-
-    <button mat-icon-button>
-      <mat-icon class="header-icon">search</mat-icon>
-    </button>
-
-    <span class="header-icon">Truck's and tricks </span>
-  </mat-toolbar>
+  <div>
+    <app-header></app-header>
+  </div>
 </nav>
 
 <main>
@@ -31,7 +9,3 @@
     <router-outlet></router-outlet>
   </div>
 </main>
-
-<footer class="footer">
-
-</footer>
