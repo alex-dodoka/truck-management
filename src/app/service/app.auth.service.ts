@@ -12,3 +12,4 @@ export class AppAuthService {
       .signInWithEmailAndPassword(email, password);
   }
 }
+

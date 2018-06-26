@@ -16,6 +16,9 @@ import {AngularFireModule} from 'angularfire2';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 import {AngularFirestoreModule} from 'angularfire2/firestore';
 import {AngularFireStorageModule} from 'angularfire2/storage';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+
 
 import {ENV_FIREBASE_CONFIG} from '../environments/environment.prod';
 
@@ -62,6 +65,7 @@ import {DragulaModule} from 'ng2-dragula';
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
+    AngularFireDatabaseModule,
     DragulaModule
   ],
   providers: [AppFirestoreService,
