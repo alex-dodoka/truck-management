@@ -31,6 +31,7 @@ import {NoContentComponent} from './no-content/no-content.component';
 import {AppAuthService} from './service/app.auth.service';
 import {AppFirestoreService} from './service/app.firestore.service';
 import {AuthGuard} from './util/auth-guard';
+import {DragulaModule} from 'ng2-dragula';
 
 
 @NgModule({
@@ -61,6 +62,7 @@ import {AuthGuard} from './util/auth-guard';
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
+    DragulaModule
   ],
   providers: [AppFirestoreService,
     AppAuthService,

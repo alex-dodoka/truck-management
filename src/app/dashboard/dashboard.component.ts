@@ -3,10 +3,11 @@ import Shipment from '../model/Shipment';
 import Truck from '../model/Truck';
 import {AppFirestoreService} from '../service/app.firestore.service';
 import {FIREBASE_SHIPMENT_TABLE, FIREBASE_TRUCK_TABLE} from '../util/routes';
+import {DragulaService} from 'ng2-dragula';
 
 @Component({
   selector: 'app-dashboard',
-  providers: [],
+  providers: [DragulaService],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })

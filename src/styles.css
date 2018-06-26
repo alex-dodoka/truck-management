@@ -1,5 +1,13 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import "styles/css/bootstrap.min.css";
+@import "~dragula/dist/dragula.min.css";
+
+
+/*-----------------------Start of my custom style for development-------------------------------------*/
+.MY_CLASS_FOR_UNDERSTANDING {
+  border: 2px black solid;
+}
+/*-----------------------Finish of my custom style for development-------------------------------------*/
 
 body {
   margin: 0;
@@ -19,6 +27,6 @@ body {
   margin-top: 2%;
 }
 
-.MY_CLASS_FOR_UNDERSTANDING {
-  border: 2px black solid;
+a {
+  font-weight: bold;
 }

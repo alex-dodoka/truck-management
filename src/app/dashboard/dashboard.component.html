@@ -2,12 +2,14 @@
   <div class="row">
 
     <div class="col-md-3">
-      <div class="row MY_CLASS_FOR_UNDERSTANDING">
-
+      <div class="row">
+        -
       </div>
     </div>
 
+    <!------------------------------------------------------------------------------------------------>
     <div class="col-md-6">
+
       <div class="jumbotron shadow MY_CLASS_FOR_UNDERSTANDING" *ngFor="let item of truckList">
         <h4>Truck with licence plate <b>{{item.licencePlate}}</b> info:</h4>
         <hr>
@@ -16,23 +18,23 @@
         <p>Phone: <b>{{item.phone}}</b></p>
         <hr class="my-4">
 
-        <div class="row">
-
-          <div class="card text-white bg-info mb-3 mr-1 col-md-5" *ngFor="let shipment of item.shipments">
+        <div class="row drug-box" [dragula]='"first-bag"'>
+          <div class="card  text-white bg-info ml-1 mb-3 mt-3 mr-1 col-md-5" *ngFor="let shipment of item.shipments">
             <div class="card-header">{{shipment.title}}</div>
             <div class="card-body">
               <p class="card-text">{{shipment.address}}</p>
             </div>
           </div>
+
         </div>
       </div>
-
     </div>
 
 
     <div class="col-md-3">
-      <div class="row">
-        <div class="card text-white bg-warning mb-3 mr-1 col-md-5 shadow MY_CLASS_FOR_UNDERSTANDING"
+      <div class="row" [dragula]='"first-bag"'>
+
+        <div class="card text-white bg-warning ml-1 mb-3 mt-3 mr-1 col-md-5 shadow MY_CLASS_FOR_UNDERSTANDING"
              *ngFor="let shipment of unassignedShipmentList">
           <div class="card-header">
             {{shipment.title}}
@@ -43,7 +45,10 @@
             </p>
           </div>
         </div>
+
       </div>
+
     </div>
   </div>
 </div>
+

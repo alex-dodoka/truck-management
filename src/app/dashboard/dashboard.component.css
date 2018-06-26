@@ -3,5 +3,28 @@
 }
 
 .min-height {
-  min-height: 500px;
+  min-height: 5px;
+}
+
+.drug-box {
+  border: black 1px dashed;
+  box-shadow: 0 .005em .01em 0 rgba(136, 243, 235, 0.04), 0 2px 10px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.drug-box:nth-child(odd) {
+  text-align: center;
+}
+
+.drug-box div,
+.gu-mirror {
+  text-align: center;
+}
+
+.drug-box div {
+  cursor: move;
+  cursor: grab;
+}
+
+.gu-mirror {
+  cursor: grabbing;
 }
